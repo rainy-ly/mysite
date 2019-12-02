@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>焦点图</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+        }
+
+        body{
+            font-size:12px;
+            font-family:"宋体";
+        }
+
+        dl{
+            width:730px;
+            height:454px;
+            background-color:red;
+            position:relative;/*定位包含框*/
+            margin:30px auto 0 auto;
+
+        }
+        dt{
+            width:110px;
+            position:absolute;/*设置dt的定位模式为绝对定位，也就是要让dt相对于其父元素dl进行定位*/
+            right:5px;
+            bottom:5px;/*坐标*/
+        }
+        a{
+            border:blue 2px solid;
+            background-color:#CCC;
+            display:block;/*将a标签元素类型进行转换为块标记,从而可以通过width和height来设置a标签的宽度和高度*/
+            width:20px;
+            height:20px;
+            float:left;/*display: line-block*/
+            text-align:center;
+            margin-right:3px;
+            line-height:20px;/*垂直居中*/
+            text-decoration:none;/*取消下划线*/
+        }
+        a:hover{/*鼠标悬停在超链接上时，超链接文本的外观效果*/
+            color:red;
+            background-color:white;
+        }
+
+        dd{
+            width:730px;/*将容纳图片的dd大小设置为图片一样大*/
+            height:454px;
+            overflow:hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>
+            <a href="#p1">1</a>
+            <a href="#p2">2</a>
+            <a href="#p3">3</a>
+            <a href="#p4">4</a>
+        </dt>
+        <dd>
+            <img src="images/1.jpg" id="p1"/>
+            <img src="images/2.jpg" id="p2"/>
+            <img src="images/3.jpg" id="p3"/>
+            <img src="images/4.jpg" id="p4"/>
+        </dd>
+    </dl>
+</body>
+</html>
